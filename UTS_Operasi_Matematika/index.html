@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Operasi Matematika</title>
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="logo">
+            My App UTS
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#calculator">Calculator</a>
+            <a href="#footer">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main id="home">
+
+        <section class="calculator" id="calculator">
+
+            <h2>Operasi Matematika dengan JavaScript</h2>
+
+            <p class="description">
+                Aplikasi Perhitungan Matematika Sederhana
+            </p>
+
+            <!-- FORM INPUT -->
+            <form id="calculatorForm">
+
+                <div class="form-group">
+
+                    <label for="angka1">
+                        Angka Pertama
+                    </label>
+
+                    <input
+                        type="number"
+                        id="angka1"
+                        placeholder="Masukkan angka pertama"
+                        step="any"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="angka2">
+                        Angka Kedua
+                    </label>
+
+                    <input
+                        type="number"
+                        id="angka2"
+                        placeholder="Masukkan angka kedua"
+                        step="any"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="operasi">
+                        Pilih Operasi Matematika
+                    </label>
+
+                    <select id="operasi" required>
+
+                        <option value="">
+                            -- Pilih Operasi --
+                        </option>
+
+                        <option value="tambah">
+                            Penjumlahan (+)
+                        </option>
+
+                        <option value="kurang">
+                            Pengurangan (-)
+                        </option>
+
+                        <option value="kali">
+                            Perkalian (×)
+                        </option>
+
+                        <option value="bagi">
+                            Pembagian (÷)
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button type="submit">
+                    Hitung
+                </button>
+
+            </form>
+
+
+            <!-- HASIL PERHITUNGAN -->
+            <div class="result-box">
+
+                <h3>Hasil Perhitungan</h3>
+
+                <p id="hasil">
+                    Hasil akan ditampilkan di sini.
+                </p>
+
+            </div>
+
+
+            <!-- RIWAYAT AKTIVITAS -->
+            <div class="history">
+
+                <h3>Riwayat Aktivitas</h3>
+
+                <ul id="activityList">
+                    <li>Belum ada aktivitas.</li>
+                </ul>
+
+                <button
+                    type="button"
+                    id="clearActivity"
+                    class="clear-button"
+                >
+                    Hapus Riwayat
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="footer">
+
+        <p>
+            &copy; 2026 My App UTS - Operasi Matematika
+        </p>
+
+    </footer>
+
+
+    <!-- Menghubungkan JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
